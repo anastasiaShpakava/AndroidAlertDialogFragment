@@ -38,7 +38,6 @@ public class FigureAdapter extends RecyclerView.Adapter<FigureAdapter.ViewHolder
     public int getItemCount() {
         return figureList.size();
     }
-
     public static class ViewHolderFigure extends RecyclerView.ViewHolder {
         final ImageView imageViewFigure;
         final TextView nameViewFigure;
