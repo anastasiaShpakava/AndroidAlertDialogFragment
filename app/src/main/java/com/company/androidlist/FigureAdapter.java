@@ -32,7 +32,7 @@ public class FigureAdapter extends RecyclerView.Adapter<FigureAdapter.ViewHolder
         Figure figure = figureList.get(position);
         holder.imageViewFigure.setImageResource(figure.getImage());
         holder.nameViewFigure.setText(figure.getText());
-    }
+     }
 
     @Override
     public int getItemCount() {
