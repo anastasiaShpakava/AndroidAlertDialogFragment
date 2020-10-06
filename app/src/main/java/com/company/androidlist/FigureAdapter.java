@@ -1,6 +1,8 @@
 package com.company.androidlist;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.renderscript.Sampler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,12 +29,20 @@ public class FigureAdapter extends RecyclerView.Adapter<FigureAdapter.ViewHolder
         return new ViewHolderFigure(view);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull FigureAdapter.ViewHolderFigure holder, int position) {
         Figure figure = figureList.get(position);
         holder.imageViewFigure.setImageResource(figure.getImage());
         holder.nameViewFigure.setText(figure.getText());
+        holder.imageViewFigure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
      }
+
 
     @Override
     public int getItemCount() {
