@@ -4,6 +4,9 @@ public class Figure {
     private int image;
     private String nameFigure;
 
+    public Figure() {
+    }
+
     public Figure(int image, String text) {
         this.image = image;
         this.nameFigure = text;

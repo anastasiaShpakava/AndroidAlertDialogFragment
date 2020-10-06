@@ -5,14 +5,12 @@ import androidx.fragment.app.DialogFragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private List<Figure> figureList = new ArrayList<>();
-    private DialogFragment dialogFigureFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +29,5 @@ public class MainActivity extends AppCompatActivity {
         figureList.add(new Figure(R.drawable.trapeze, "Trapeze"));
         figureList.add(new Figure(R.drawable.cone, "Cone"));
         figureList.add(new Figure(R.drawable.cylinder, "Cylinder"));
-
-        dialogFigureFragment = new DialogFigureFragment();
     }
 }
